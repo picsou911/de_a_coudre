@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/dé1.jpg') }}">
+    <title>{% block tittle %}Dé-2-JP{% endblock %}</title>
+
+
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-info" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">A propos de</h4>
+                    <p class="text-white">Un dé à coudre est un petit objet souvent cylindrique dans lequel on insère le bout du doigt pour le protéger de l'aiguille à coudre, généralement le majeur ou l'annulaire.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-info shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="{{ asset('assets/images/dé1.jpg') }}" class="img-thumbnail" alt="icones" />
+                <h1><strong>Dé-2-JP</strong></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <nav class="navbar navbar-light bg-info">
+            <div class="container-fluid">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="chercher" placeholder="chercher" aria-label="chercher">
+                    <button class="btn btn-outline-success" type="submit">chercher</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-bold">DE A COUDRE</h1>
+                <p class="fst-italic">Je vous présente ma collection de dé à coudre venu des differentes régions de France et de pays. Je m'appelle Jean-Paul, j' ai 41 ans et je vis dans l'Allier.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+
+        {% block content %}
+        {% endblock %}
+
+        </div>
+
+</main>
+<footer class="p-3 mb-2 bg-info text-white">
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">
+                <button type="button" class="btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                    </svg></button>
+            </a>
+        </p>
+        <p class="text-center"> &copy; Dé-2-JP 2021</p>
+
+    </div>
+</footer>
+
+
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
+
+</body>
+</html>
