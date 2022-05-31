@@ -7,6 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/dé1.jpg') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>{% block tittle %}Dé-2-JP{% endblock %}</title>
 
 
@@ -57,22 +58,41 @@
     </div>
     <div class="navbar navbar-dark bg-info shadow-sm">
         <div class="container">
-            <a href="#" class="navbar-brand d-flex align-items-center">
+            <a href="#" class="navbar-brand d-flex align-items-center animate__animated animate__backInLeft">
                 <img src="{{ asset('assets/images/dé1.jpg') }}" class="img-thumbnail" alt="icones" />
                 <h1><strong>Dé-2-JP</strong></h1>
             </a>
+            <div class="navbar-item-custom">
+                <button type="button" class="btn btn-outline-danger"><a href="#">Déconnexion</a></button>
+                <button type="button" class="btn btn-outline-success"><a href="#">Connexion</a></button>
+
+            <!--<nav class="navbar navbar-light bg-info">
+                <div class="container-fluid">-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-        <nav class="navbar navbar-light bg-info">
-            <div class="container-fluid">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="chercher" placeholder="chercher" aria-label="chercher">
-                    <button class="btn btn-outline-success" type="submit">chercher</button>
-                </form>
             </div>
-        </nav>
+            <div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="Rechercher" aria-label="Rechercher" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></button>
+            </div>
+                    <!--<form class="d-flex">
+                        <input class="form-control me-2" type="chercher" placeholder="chercher" aria-label="chercher">
+                        <button class="btn btn-outline-success" type="submit">chercher</button>
+                    </form>-->
+                    <!--<div class="navbar-item-custom">
+                        <a href="#">Déconnexion</a>
+                        <a href="#">Connexion</a>
+                    </div>-->
+                <!--</div>-->
+
+            <!--</nav>-->
+
+        </div>
+
+
     </div>
 </header>
 
@@ -124,7 +144,7 @@
                     </svg></button>
             </a>
         </p>
-        <p class="text-center"> &copy; Dé-2-JP 2021</p>
+        <p class="text-center"> &copy; Dé-2-JP 2022</p>
 
     </div>
 </footer>
