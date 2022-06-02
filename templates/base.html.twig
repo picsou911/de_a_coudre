@@ -31,6 +31,10 @@
                 font-size: 3.5rem;
             }
         }
+
+        h1 {
+            color : white;
+        }
     </style>
 
 
@@ -58,10 +62,17 @@
     </div>
     <div class="navbar navbar-dark bg-info shadow-sm">
         <div class="container">
+            <div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="Rechercher" aria-label="Rechercher" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></button>
+            </div>
             <a href="#" class="navbar-brand d-flex align-items-center animate__animated animate__backInLeft">
                 <img src="{{ asset('assets/images/dé1.jpg') }}" class="img-thumbnail" alt="icones" />
-                <h1><strong>Dé-2-JP</strong></h1>
+
             </a>
+            <h1><strong>Dé-2-JP</strong></h1>
             <div class="navbar-item-custom">
                 <button type="button" class="btn btn-outline-danger"><a href="#">Déconnexion</a></button>
                 <button type="button" class="btn btn-outline-success"><a href="#">Connexion</a></button>
@@ -72,12 +83,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             </div>
-            <div class="input-group mb-2">
-                <input type="text" class="form-control" placeholder="Rechercher" aria-label="Rechercher" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg></button>
-            </div>
+
                     <!--<form class="d-flex">
                         <input class="form-control me-2" type="chercher" placeholder="chercher" aria-label="chercher">
                         <button class="btn btn-outline-success" type="submit">chercher</button>
@@ -101,7 +107,7 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-bold">DE A COUDRE</h1>
+                <h2 class="fw-bold">DE A COUDRE</h2><br>
                 <p class="fst-italic">Je vous présente ma collection de dé à coudre venu des differentes régions de France et de pays. Je m'appelle Jean-Paul, j' ai 41 ans et je vis dans l'Allier.</p>
             </div>
         </div>
@@ -116,23 +122,23 @@
 
 </main>
 <footer class="p-3 mb-2 bg-info text-white">
-<nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 
     <div class="container">
@@ -154,4 +160,5 @@
 
 
 </body>
+
 </html>
