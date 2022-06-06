@@ -8,6 +8,7 @@
     <meta name="generator" content="Hugo 0.80.0">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/dé1.jpg') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <title>{% block tittle %}Dé-2-JP{% endblock %}</title>
 
 
@@ -103,7 +104,7 @@
 </header>
 
 <main>
-
+    {% if block('a_propos') is defined%}
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
@@ -112,48 +113,51 @@
             </div>
         </div>
     </section>
+    {% endif %}
 
-    <div class="album py-5 bg-light">
+    <div class="album py-5 bg-light ">
 
         {% block content %}
         {% endblock %}
 
         </div>
 
+    <footer class="p-3 mb-2 bg-info text-white footer-custom">
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">
+                    <button type="button" class="btn btn-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                        </svg></button>
+                </a>
+            </p>
+            <p class="text-center"> &copy; Dé-2-JP 2022</p>
+
+        </div>
+    </footer>
+
+
 </main>
-<footer class="p-3 mb-2 bg-info text-white">
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">
-                <button type="button" class="btn btn-light">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                    </svg></button>
-            </a>
-        </p>
-        <p class="text-center"> &copy; Dé-2-JP 2022</p>
-
-    </div>
-</footer>
 
 
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
