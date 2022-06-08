@@ -43,24 +43,6 @@
 <body>
 
 <header>
-    <div class="collapse bg-info" id="navbarHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">A propos de</h4>
-                    <p class="text-white">Un dé à coudre est un petit objet souvent cylindrique dans lequel on insère le bout du doigt pour le protéger de l'aiguille à coudre, généralement le majeur ou l'annulaire.</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Twitter</a></li>
-                        <li><a href="#" class="text-white">Facebook</a></li>
-                        <li><a href="#" class="text-white">Email</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="navbar navbar-dark bg-info shadow-sm">
         <div class="container">
             <div class="input-group mb-2">
@@ -82,29 +64,8 @@
                 <button type="button" class="btn btn-outline-danger"><a href="{{ path('app_login') }}">Connexion</a></button>
                 <button type="button" class="btn btn-outline-success"><a href="{{ path('register') }}">Inscription</a></button>
                 {% endif %}
-
-            <!--<nav class="navbar navbar-light bg-info">
-                <div class="container-fluid">-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             </div>
-
-                    <!--<form class="d-flex">
-                        <input class="form-control me-2" type="chercher" placeholder="chercher" aria-label="chercher">
-                        <button class="btn btn-outline-success" type="submit">chercher</button>
-                    </form>-->
-                    <!--<div class="navbar-item-custom">
-                        <a href="#">Déconnexion</a>
-                        <a href="#">Connexion</a>
-                    </div>-->
-                <!--</div>-->
-
-            <!--</nav>-->
-
         </div>
-
-
     </div>
 </header>
 
@@ -150,9 +111,22 @@
                 </li>
 
             </ul>
-        </nav>
+        </nav><hr>
         {% endif %}
-
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">A propos de</h4>
+                    <p class="text-white">Un dé à coudre est un petit objet souvent cylindrique dans lequel on insère le bout du doigt pour le protéger de l'aiguille à coudre, généralement le majeur ou l'annulaire.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <p class="float-end mb-1">
                 <a href="#">
