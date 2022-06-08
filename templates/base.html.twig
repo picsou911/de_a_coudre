@@ -75,8 +75,13 @@
             </a>
             <h1><strong>Dé-2-JP</strong></h1>
             <div class="navbar-item-custom">
-                <button type="button" class="btn btn-outline-danger"><a href="#">Déconnexion</a></button>
-                <button type="button" class="btn btn-outline-success"><a href="#">Connexion</a></button>
+                {% if app.user %}
+                    <button type="button" class="btn btn-outline-danger"><a href="{{ path('account') }}">Mon compte</a></button>
+                    <button type="button" class="btn btn-outline-success"><a href="{{ path('app_logout') }}">Déconnexion</a></button>
+                {% else %}
+                <button type="button" class="btn btn-outline-danger"><a href="{{ path('app_login') }}">Connexion</a></button>
+                <button type="button" class="btn btn-outline-success"><a href="{{ path('register') }}">Inscription</a></button>
+                {% endif %}
 
             <!--<nav class="navbar navbar-light bg-info">
                 <div class="container-fluid">-->
@@ -115,18 +120,21 @@
     </section>
     {% endif %}
 
-    {% block content %}
-    <div class="album py-5 bg-light ">
 
-
+    <div class="album py-5  bg-light{% if block('a_propos') is not defined %}mt-5 bg-white{% endif %}">
+        {% block content %}
+        {% endblock %}
         </div>
-    {% endblock %}
 
-    {% if block('footers') is defined%}
+
+
     <footer class="p-3 mb-2 bg-info text-white footer-custom">
+        {% if block('footers') is defined%}
         <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center">
+
                 <li class="page-item">
+
                     <a class="page-link" href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
@@ -138,10 +146,12 @@
                     <a class="page-link" href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
+
                 </li>
+
             </ul>
         </nav>
-
+        {% endif %}
 
         <div class="container">
             <p class="float-end mb-1">
@@ -156,7 +166,7 @@
 
         </div>
     </footer>
-    {% endif %}
+
 
 </main>
 
