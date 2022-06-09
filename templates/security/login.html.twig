@@ -3,6 +3,7 @@
 {% block title %}Se connecter - Dé-2-JP{% endblock %}
 
 {% block content %}
+<div class="container mt-5">
 <form method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -39,7 +40,11 @@
     <button class="btn btn-lg btn-primary btn-sm" type="submit">
         Se connecter
     </button>
+    <br>
+    <br>
+    <br>
 </form>
+</div>
 {% endblock %}
 
 

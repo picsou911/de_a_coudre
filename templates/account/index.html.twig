@@ -3,8 +3,19 @@
 {% block title %}Mon compte - Dé-2-JP{% endblock %}
 
 {% block content %}
-    <h1 class="text-black">Mon compte</h1>
-    Bienvenue {{ app.user.firstname }} dans votre compte.<br/>
-    C'est dans cet espace que vous allez pouvoir gérer toutes vos informations personnelles.
-
+    <div class="container mt-5">
+        <h1 class="text-black">Mon compte</h1>
+        Bienvenue {{ app.user.firstname }} dans votre compte.<br/>
+        C'est dans cet espace que vous allez pouvoir gérer toutes vos informations personnelles.
+        <hr>
+        - <a href="{{ path('account_password') }}">Modifier mon mot de passe</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+    </div>
 {% endblock %}
+
+
+
