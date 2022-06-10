@@ -39,7 +39,7 @@
         }
 
         body {
-            font-family: 'Hammersmith One';font-size: 22px;
+            font-family: 'Hammersmith One';font-size: 18px;
         }
     </style>
 
@@ -60,10 +60,10 @@
                 <img src="{{ asset('assets/images/dé1.jpg') }}" class="img-thumbnail" alt="icones" />
 
             </a>
-            <h1><strong>Dé-2-JP</strong></h1>
+            <h1><strong><a href="{{ path('home') }}">Dé-2-JP</a></strong></h1>
             <div class="navbar-item-custom">
                 {% if app.user %}
-                    <button type="button" class="btn btn-outline-danger"><a href="{{ path('account') }}">Mon compte</a></button>
+                    <button type="button" class="btn btn-outline-danger"><a href="{{ path('account') }}">Mon compte <small>({{ app.user.firstname }})</small></a></button>
                     <button type="button" class="btn btn-outline-success"><a href="{{ path('app_logout') }}">Déconnexion</a></button>
                 {% else %}
                 <button type="button" class="btn btn-outline-danger"><a href="{{ path('app_login') }}">Connexion</a></button>
