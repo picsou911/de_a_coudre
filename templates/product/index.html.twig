@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dé-2-JP{% endblock %}
+
+{% block content %}
+    <h1 class="text-black">Dé à coudre</h1>
+
+    <div class="album py-5  bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                {% for product in products %}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-thumbnail">
+                        <div class="card-body">
+                            <p class="card-text"><a href="{{ product.subtitle }}" target="_blank">{{ product.name }}</a> </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
