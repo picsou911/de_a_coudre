@@ -1,0 +1,8 @@
+<div class="col">
+    <div class="card h-100">
+        <a href="{{ path('product', {'slug' : product.slug}) }}"><img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-thumbnail"></a>
+        <div class="card-body">
+            <p class="card-text"><a href="{{ product.subtitle }}" target="_blank">{{ product.name }}</a> {{ product.description }}</p>
+        </div>
+    </div>
+</div>

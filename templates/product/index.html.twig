@@ -9,14 +9,7 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {% for product in products %}
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-thumbnail">
-                        <div class="card-body">
-                            <p class="card-text"><a href="{{ product.subtitle }}" target="_blank">{{ product.name }}</a> </p>
-                        </div>
-                    </div>
-                </div>
+                    {% include 'product/single_product.html.twig' %}
                 {% endfor %}
             </div>
         </div>
