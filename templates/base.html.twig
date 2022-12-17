@@ -56,13 +56,13 @@
             </a>
             <h1><strong><a href="{{ path('home') }}">Dé-2-JP</a></strong></h1>
             <div class="navbar-item-custom">
-                <button type="button" class="btn btn-outline-danger"><a href="{{ path('products') }}">Dé à coudre </a></button>
+                <a href="{{ path('products') }}">Dé à coudre |</a>
                 {% if app.user %}
-                    <button type="button" class="btn btn-outline-danger"><a href="{{ path('account') }}">Mon compte <small>({{ app.user.firstname }})</small></a></button>
-                    <button type="button" class="btn btn-outline-success"><a href="{{ path('app_logout') }}">Déconnexion</a></button>
+                    <a href="{{ path('account') }}">Mon compte <small>({{ app.user.firstname }}) |</small></a>
+                    <a href="{{ path('app_logout') }}">Déconnexion</a>
                 {% else %}
-                <button type="button" class="btn btn-outline-danger"><a href="{{ path('app_login') }}">Connexion</a></button>
-                <button type="button" class="btn btn-outline-success"><a href="{{ path('register') }}">Inscription</a></button>
+                <a href="{{ path('app_login') }}">Connexion |</a>
+                <a href="{{ path('register') }}">Inscription</a>
                 {% endif %}
             </div>
         </div>
