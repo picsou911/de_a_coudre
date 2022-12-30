@@ -14,6 +14,9 @@ class AccountPasswordController extends AbstractController
 {
     private $entityManager;
 
+    /**
+     * @param $entityManager
+     */
     public function __construct(EntityManagerInterface $entityManager) {
         $this->entityManager = $entityManager;
     }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/de_a_coudre/src" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/de_a_coudre/tests" isTestSource="true" packagePrefix="App\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/easycorp/easyadmin-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/friendsofphp/proxy-manager-lts" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/twig/extra-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/laminas/laminas-code" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/asset" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/cache-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/debug-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/dotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/doctrine-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/flex" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/framework-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/form" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/maker-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/intl" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/password-hasher" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/polyfill-intl-icu" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/proxy-manager-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/runtime" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/security-core" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/security-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/security-http" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/security-csrf" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/stopwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/twig-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/uid" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/twig-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/validator" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/web-profiler-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/doctrine-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/doctrine-migrations-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/migrations" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/persistence" />
+      <excludeFolder url="file://$MODULE_DIR$/de_a_coudre/vendor/doctrine/orm" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
