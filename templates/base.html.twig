@@ -48,7 +48,44 @@
 <body>
 
 <header>
-    <div class="navbar navbar-dark bg-info shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="{{ path('home') }}"><strong>Dé-2-JP</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('products') }}">Dé à coudre</a>
+                </li>
+                {% if app.user %}
+
+                <li class="nav-item"> 
+                    <a class="nav-link" href="{{ path('account') }}">Mon compte <small>({{ app.user.firstname }}) </small></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_logout') }}">Déconnexion</a>
+                    
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_login') }}">Connexion</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{ path('register') }}">Inscription</a>
+                </li>
+                {% endif %}
+                <li class="nav-item dropdown">
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{{ path('products') }}">Home</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--<div class="navbar navbar-dark bg-info shadow-sm">
         <div class="container">
             <a href="{{ path('home') }}" class="navbar-brand d-flex align-items-center animate__animated animate__backInLeft">
                 <img src="{{ asset('assets/images/dé1.jpg') }}" class="img-thumbnail" alt="icones" />
@@ -66,7 +103,7 @@
                 {% endif %}
             </div>
         </div>
-    </div>
+    </div>-->
 </header>
 
 <main>
@@ -147,7 +184,8 @@
 
 
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 </body>
 
